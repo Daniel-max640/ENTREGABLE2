@@ -1,0 +1,46 @@
+
+.weather-card {
+    border: 1px solid #ccc;
+    padding: 40px 40px;
+    border-radius: 10px;
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .container {
+    display: grid; /* Utiliza Grid para el contenido */
+    grid-template-columns: repeat(2, 1fr); /* Divide el contenido en dos columnas */
+    gap: 5px; /* Espacio entre las columnas */
+    align-items: center; /* Centra verticalmente el contenido */
+   
+  }
+
+  /* Anula los estilos predeterminados de la lista */
+.container ul {
+    list-style: none; /* Elimina los marcadores de viñetas */
+    padding-left: 0px;
+    
+  }
+  
+  .container ul li {
+    text-align: left;
+       
+  }
+  h2 {
+    padding: 20px;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
