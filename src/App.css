@@ -4,7 +4,7 @@ body {
   background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
   background-repeat: no-repeat; /* Evita la repetición de la imagen */
   background-attachment: fixed; 
-    background-position: center center; /* Centra la imagen de fondo horizontal y verticalmente */
+  background-position: center center; /* Centra la imagen de fondo horizontal y verticalmente */
 }
 
 .weather-card {
@@ -22,8 +22,7 @@ body {
     grid-template-columns: repeat(2, 1fr); /* Divide el contenido en dos columnas */
     gap: 5px; /* Espacio entre las columnas */
     align-items: center; /* Centra verticalmente el contenido */
-   
-  }
+    }
 
   .clima { 
     width: 150px;
@@ -58,9 +57,10 @@ body {
   }
 
   .weather-card li {
-    margin-bottom: 10px; /* Agrega margen inferior para separar los elementos */
-    display: flex; /* Utiliza flexbox para alinear los elementos horizontalmente */
-    justify-content: space-between; /* Distribuye los elementos horizontalmente */
+    display: grid; /* Utiliza Grid para los elementos li */
+    grid-template-columns: 1fr 1fr; /* Divide el espacio en dos columnas iguales */
+    margin-bottom: 10px;
+    
   }
 
   .weather-card2 .medicion {
@@ -69,9 +69,11 @@ body {
   }
 
 
-  .weather-card li span {
-    text-align: left; /* Alinea el texto a la izquierda dentro de los spans */
+  .weather-card li .medicion {
+    margin-left: 15px; /* Agrega un margen izquierdo de 10px entre los elementos */
+    text-align: right;
   }
+
   @media screen and (max-width: 768px) {
     h1 {
       font-size: 24px; /* Tamaño de fuente más pequeño para pantallas pequeñas */
