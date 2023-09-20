@@ -1,6 +1,6 @@
 
 body {
-  background-image: url('public/images/cloud-1987416_1280.png');
+  background-image: url('public/cloud-1987416_1280.png');
   background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
   background-repeat: no-repeat; /* Evita la repetición de la imagen */
   background-attachment: fixed; 
@@ -20,7 +20,7 @@ body {
   .container {
     display: grid; /* Utiliza Grid para el contenido */
     grid-template-columns: repeat(2, 1fr); /* Divide el contenido en dos columnas */
-    gap: 5px; /* Espacio entre las columnas */
+    gap: 10px; /* Espacio entre las columnas */
     align-items: center; /* Centra verticalmente el contenido */
    
   }
@@ -67,6 +67,10 @@ body {
     font-weight: 600;   
   }
 
+
+  .weather-card li span {
+    text-align: left; /* Alinea el texto a la izquierda dentro de los spans */
+  }
   @media screen and (max-width: 768px) {
     h1 {
       font-size: 24px; /* Tamaño de fuente más pequeño para pantallas pequeñas */
