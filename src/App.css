@@ -1,6 +1,6 @@
 
 body {
-  background-image: url('public/cloud-1987416_1280.png');
+  background-image: url('/cloud-1987416_1280.png');
   background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
   background-repeat: no-repeat; /* Evita la repetición de la imagen */
   background-attachment: fixed; 
@@ -20,7 +20,7 @@ body {
   .container {
     display: grid; /* Utiliza Grid para el contenido */
     grid-template-columns: repeat(2, 1fr); /* Divide el contenido en dos columnas */
-    gap: 10px; /* Espacio entre las columnas */
+    gap: 5px; /* Espacio entre las columnas */
     align-items: center; /* Centra verticalmente el contenido */
    
   }
@@ -64,7 +64,8 @@ body {
   }
 
   .weather-card2 .medicion {
-    font-weight: 600;   
+    font-weight: 600; 
+     
   }
 
 
