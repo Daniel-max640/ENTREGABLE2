@@ -46,15 +46,14 @@ function App() {
   console.log(weather)
 
   return (  
-    <div className='fondo2'>
+    
       <div>        
         <WeatherCard
           weather = {weather}
           temp={temp}       
         />
       </div>
-
-     </div>
+     
   )
 }
 

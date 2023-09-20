@@ -1,10 +1,10 @@
 
 body {
-  background-image: url('public/cloud19874161280.png');
+  background-image: url('public/cloud-1987416_1280.png');
   background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
   background-repeat: no-repeat; /* Evita la repetición de la imagen */
   background-attachment: fixed; 
-  background-position: center center; /* Centra la imagen de fondo horizontal y verticalmente */
+    background-position: center center; /* Centra la imagen de fondo horizontal y verticalmente */
 }
 
 .weather-card {
