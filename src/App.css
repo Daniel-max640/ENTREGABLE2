@@ -1,6 +1,15 @@
 
+body {
+  background-image: url('public/images/cloud-1987416_1280.png');
+  background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
+  background-repeat: no-repeat; /* Evita la repetición de la imagen */
+  background-attachment: fixed; 
+    background-position: center center; /* Centra la imagen de fondo horizontal y verticalmente */
+}
+
 .weather-card {
     border: 1px solid #ccc;
+    background-color: rgba(255, 255, 255, 0.575); 
     padding: 40px 40px;
     border-radius: 10px;
     max-width: 500px;
@@ -16,23 +25,26 @@
    
   }
 
+  .clima { 
+    width: 150px;
+  }
+
+  section {
+    padding: 15px;
+  }
+
   /* Anula los estilos predeterminados de la lista */
 .container ul {
     list-style: none; /* Elimina los marcadores de viñetas */
-    padding-left: 0px;
-    
+    padding-left: 0px;    
   }
   
-  .container ul li {
-    text-align: left;
-       
-  }
   h2 {
     padding: 20px;
   }
   
   button {
-    background-color: #007bff;
+    background-color: hsl(211, 59%, 35%);
     color: white;
     border: none;
     padding: 10px 20px;
@@ -43,4 +55,20 @@
 
   h1 {
     font-size: 40px;
+  }
+
+  .weather-card li {
+    margin-bottom: 10px; /* Agrega margen inferior para separar los elementos */
+    display: flex; /* Utiliza flexbox para alinear los elementos horizontalmente */
+    justify-content: space-between; /* Distribuye los elementos horizontalmente */
+  }
+
+  .weather-card2 .medicion {
+    font-weight: 600;   
+  }
+
+  @media screen and (max-width: 768px) {
+    h1 {
+      font-size: 24px; /* Tamaño de fuente más pequeño para pantallas pequeñas */
+    }
   }

@@ -11,14 +11,14 @@ const WeatherCard = ({ weather, temp }) => {
       <h2>{weather?.name}, {weather?.sys.country}</h2> 
       <div className="container"> 
         <div>
-        <img src={weather && `https://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png`} alt="" />
+        <img  className="clima" src={weather && `https://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png`} alt="" />
         </div>
         <section>
             <h3>"{weather?.weather[0].description}"</h3>
-            <ul>
-                <li><span>Wind Speed</span><span>{weather?.wind.speed}m/s</span></li>
-                <li><span>Clouds</span><span>{weather?.clouds.all}%</span></li>
-                <li><span>Pressure</span><span>{weather?.main.pressure}hPa</span></li>
+            <ul className="weather-card2">
+                <li><span>Wind Speed</span><span className="medicion">{weather?.wind.speed}m/s</span></li>
+                <li><span>Clouds</span><span className="medicion">{weather?.clouds.all}%</span></li>
+                <li><span>Pressure</span><span className="medicion">{weather?.main.pressure}hPa</span></li>
             </ul>
         </section>
       </div>
